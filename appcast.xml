@@ -3,6 +3,16 @@
     <channel>
         <title>Mova</title>
         <item>
+            <title>0.3.0</title>
+            <pubDate>Sun, 01 Nov 2026 16:03:39 +0200</pubDate>
+            <link>https://github.com/yuri-val/mova-releases</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/yuri-val/mova-releases/releases/tag/v0.3.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>82</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/yuri-val/mova-releases/releases/download/v0.3.0/Mova-0.3.0.zip" length="2740157" type="application/octet-stream" sparkle:edSignature="xYMikHwx/RPoqIp0cix5MeQa53sDqYFcdIQDNIZWy+Kg+ycauD4SgxHU0OUlOvKblYlLQclaDzcdjNU7QE7HAg=="/>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Sun, 01 Nov 2026 15:29:41 +0200</pubDate>
             <link>https://github.com/yuri-val/mova-releases</link>
