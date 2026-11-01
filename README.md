@@ -8,7 +8,8 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/yuri-val/mova-releases/releases/latest"><b>Завантажити останню версію</b></a>
+<a href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg"><b>Завантажити Mova.dmg</b></a>
+ · <a href="https://mova.yuri-val.dev/uk/">Сайт</a>
 </p>
 
 <p align="center"><img src="screenshots/demo.gif" width="656" alt="ghbdsn → привіт, руддщ → hello, cdsn → світ"></p>
@@ -130,4 +131,4 @@ automatic fix within 3 seconds. Terminals, code editors and remote
 desktops are excluded by default, and secure input fields are never
 touched. Keystrokes stay on your Mac.
 Requires macOS 15 or later.
-[Download the latest release](https://github.com/yuri-val/mova-releases/releases/latest).
+[Download Mova.dmg](https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg) · [Website](https://mova.yuri-val.dev/).
