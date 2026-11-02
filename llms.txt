@@ -1,0 +1,34 @@
+# Mova
+
+> Typed a word in the wrong layout? Mova notices after the space, switches the layout and retypes the word. English and Ukrainian, for macOS.
+
+Version 0.4.1. macOS 15 or later. Download: https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg
+English page: https://mova.yuri-val.dev/en/ · Ukrainian (main): https://mova.yuri-val.dev/
+
+## Pricing
+14-day free trial, then a one-time purchase (lifetime license):
+- Personal: 299 UAH, up to 2 Macs at a time
+- Family: 699 UAH, up to 5 Macs at a time
+- Business: 2999 UAH, up to 20 Macs at a time
+Buy: https://mova.yuri-val.dev/en/buy/ · Terms: https://mova.yuri-val.dev/en/terms/ · Privacy: https://mova.yuri-val.dev/en/privacy/
+
+## Features
+- Fixes words automatically: After a space, Enter, Tab or punctuation Mova checks the word. If it only makes sense in the other layout, Mova erases it and types it right, together with the short words before it: «yf cmjujlys» becomes «на сьогодні».
+- Fixes on demand: Press ⌃ and ⌥ together: Mova fixes the word you are typing, or the last one. Any length.
+- Easy to undo: The same hotkey within 3 seconds puts the word back and remembers it, so Mova leaves it alone from then on.
+- Understands unknown words: The macOS dictionary, rules for impossible letter combinations and letter-pair statistics for names and jargon. Doubtful words stay as they are.
+- Stays out of the way: Terminals, code editors, remote desktops and virtual machines are excluded by default. Password fields are never touched.
+- Updates itself: Checks for a new version once a day and shows it in the menu. The update window opens only when you click.
+
+## FAQ
+- Mova doesn't fix anything. What should I check? Open the Mova menu: the status line should say it is listening, with two permission ticks. Also check that auto-switching is on and the app is not in the exclusion list.
+- Mova fixed a word I meant to keep. Press ⌃⌥ right away: the word comes back and won't be fixed automatically again.
+- Mova didn't fix a word. Press ⌃⌥ to fix it by hand. If the word comes up often, add it to the always-switch list.
+- Which layouts do I need? English and Ukrainian layouts enabled in macOS, for example U.S. and Ukrainian-PC. Mova leaves other layouts alone.
+- Does it work in terminals and code editors? Not automatically: ordinary text there often looks like a typo. The hotkey works everywhere, and the exclusion list is yours to edit.
+- How do I uninstall Mova? Quit it from the menu and move Mova from Applications to the Trash. Settings live in ~/Library/Application Support/Mova/.
+- How much does Mova cost? 14 days free, then a one-time purchase: Personal 299 UAH (up to 2 Macs), Family 699 UAH (up to 5), Business 2999 UAH (up to 20). No subscription, updates included.
+- What happens after the trial? Mova stops fixing the layout until you enter a key. Your settings and exceptions are kept.
+- Does Mova need the internet? Once a day Mova confirms the license. Without a connection a licensed Mova keeps working for up to 30 days. What you type is never sent.
+- How do I move my license to a new Mac? Activate the key on the new Mac. If there are no free seats, click Settings → License → Deactivate on the old one, or just wait: a Mac silent for 30 days frees its seat.
+- How do I get a refund? Within 14 days of payment write to support@yuri-val.dev from the address you bought with. The money goes back to your card and the key is revoked.

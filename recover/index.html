@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Відновити ключ — Mova</title>
+<meta name="description" content="Надішлемо ключі Mova на адресу, з якою ви купували ліцензію.">
+
+<link rel="canonical" href="https://mova.yuri-val.dev/recover/">
+<link rel="alternate" hreflang="en" href="https://mova.yuri-val.dev/en/recover/">
+<link rel="alternate" hreflang="uk" href="https://mova.yuri-val.dev/recover/">
+<link rel="alternate" hreflang="x-default" href="https://mova.yuri-val.dev/recover/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mova">
+<meta property="og:title" content="Відновити ключ — Mova">
+<meta property="og:description" content="Надішлемо ключі Mova на адресу, з якою ви купували ліцензію.">
+<meta property="og:url" content="https://mova.yuri-val.dev/recover/">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:image" content="https://mova.yuri-val.dev/assets/og-uk.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preload" href="../fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css?v=0.4.1">
+<script>
+  // Before first paint: remembered theme, and `js` so .reveal may hide content.
+  document.documentElement.classList.add('js');
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+
+</head>
+
+<body>
+<a class="skip" href="#main">Перейти до вмісту</a>
+
+<header class="site-header" data-header>
+  <div class="container header-row">
+    <a class="brand" href="../" aria-label="Mova">
+      <img src="../assets/app-icon.png" width="32" height="32" alt="">
+      <span>Mova</span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Розділи" data-nav>
+      <a href="../#features">Можливості</a>
+      <a href="../#how">Як працює</a>
+      <a href="../#pricing">Ціни</a>
+      <a href="../#privacy">Приватність</a>
+      <a href="../#faq">Питання</a>
+      <a href="../#contact">Контакти</a>
+      <a class="nav-lang" href="../en/recover/" hreflang="en" lang="en">English</a>
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href="../en/recover/" hreflang="en" lang="en" title="English version">EN</a>
+      <button class="icon-btn" type="button" data-theme-toggle data-label-dark="Темна тема" data-label-light="Світла тема" aria-label="Темна тема">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-sm" href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">Завантажити</a>
+      <button class="icon-btn menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Меню" data-menu-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <section class="section page">
+    <div class="container narrow">
+      <header class="section-head is-left">
+        <h1>Відновити ключ</h1>
+        <p>Вкажіть email, з яким купували Mova. Ми надішлемо на нього всі ваші ключі.</p>
+      </header>
+      <form class="card form" data-recover-form novalidate>
+        <label>Email<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+        <button class="btn btn-primary" type="submit">Надіслати ключі</button>
+        <p class="form-status" role="status" data-status></p>
+        <noscript><p class="fine">Форма працює з увімкненим JavaScript. Або напишіть на support@yuri-val.dev.</p></noscript>
+      </form>
+      <p class="fine">Не пам’ятаєте адресу? Напишіть на support@yuri-val.dev — знайдемо покупку за датою чи сумою.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="../"><img src="../assets/app-icon.png" width="28" height="28" alt=""><span>Mova</span></a>
+      <p class="fine">Автоматичний перемикач розкладки для macOS. Англійська та українська.</p>
+    </div>
+    <nav aria-label="Розділи сторінки">
+      <a href="../#features">Можливості</a>
+      <a href="../#how">Як працює</a>
+      <a href="../#settings">Налаштування</a>
+      <a href="../#privacy">Приватність</a>
+      <a href="../#faq">Питання</a>
+    </nav>
+    <nav aria-label="Покупцям">
+      <a href="../#pricing">Ціни</a>
+      <a href="../buy/">Купити ліцензію</a>
+      <a href="../recover/">Відновити ключ</a>
+      <a href="../terms/">Публічна оферта</a>
+      <a href="../privacy/">Політика конфіденційності</a>
+      <a href="../#contact">Контакти</a>
+    </nav>
+    <nav aria-label="Посилання">
+      <a href="https://github.com/yuri-val/mova-releases/releases">Усі версії</a>
+      <a href="https://github.com/yuri-val/mova-releases/blob/main/CHANGELOG.md">Журнал змін</a>
+      <a href="../en/recover/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+  <div class="container footer-base">
+    <p class="fine">© 2026 ФОП Валігурський Юрій Петрович · РНОКПП 3455107130 · <a href="mailto:support@yuri-val.dev">support@yuri-val.dev</a> · Зроблено в Україні</p>
+  </div>
+</footer>
+
+<script type="application/json" id="page-data">{"api": "https://mova-pay.yuri-valigursky.workers.dev", "lang": "uk", "messages": {"sending": "Надсилаємо…", "redirecting": "Переходимо до оплати…", "sent_contact": "Дякуємо! Відповімо на вказаний email.", "sent_recover": "Якщо на цю адресу є ключі, лист уже в дорозі. Перевірте також «Спам».", "copied": "Скопійовано", "err_email": "Перевірте email.", "err_message": "Напишіть повідомлення.", "err_consent": "Потрібно погодитися з умовами оферти.", "err_key": "Ключ має вигляд MOVA-XXXX-XXXX-XXXX-XXXX.", "err_invalid_key": "Такого ключа немає. Перевірте, чи скопійовано його повністю.", "err_revoked": "Цей ключ відкликано.", "err_not_upgrade": "Ваш ключ уже {edition} або більший. Оберіть більшу редакцію.", "err_too_many": "Забагато повідомлень. Спробуйте за годину або напишіть на email.", "err_payment": "Оплата тимчасово недоступна. Спробуйте пізніше або напишіть нам.", "err_network": "Немає зв’язку із сервером. Перевірте інтернет і спробуйте ще раз.", "editions": {"personal": "особистий", "family": "сімейний", "business": "корпоративний"}}}</script>
+<script src="../main.js?v=0.4.1" defer></script>
+<script src="../pay.js?v=0.4.1" defer></script>
+</body>
+</html>

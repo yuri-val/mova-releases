@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buy Mova — Mova</title>
+<meta name="description" content="A Mova license for macOS: Personal, Family or Business. Pay by card, Apple Pay or Google Pay through monobank.">
+
+<link rel="canonical" href="https://mova.yuri-val.dev/en/buy/">
+<link rel="alternate" hreflang="en" href="https://mova.yuri-val.dev/en/buy/">
+<link rel="alternate" hreflang="uk" href="https://mova.yuri-val.dev/buy/">
+<link rel="alternate" hreflang="x-default" href="https://mova.yuri-val.dev/buy/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mova">
+<meta property="og:title" content="Buy Mova — Mova">
+<meta property="og:description" content="A Mova license for macOS: Personal, Family or Business. Pay by card, Apple Pay or Google Pay through monobank.">
+<meta property="og:url" content="https://mova.yuri-val.dev/en/buy/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://mova.yuri-val.dev/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preload" href="../../fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../styles.css?v=0.4.1">
+<script>
+  // Before first paint: remembered theme, and `js` so .reveal may hide content.
+  document.documentElement.classList.add('js');
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container header-row">
+    <a class="brand" href="../" aria-label="Mova">
+      <img src="../../assets/app-icon.png" width="32" height="32" alt="">
+      <span>Mova</span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Sections" data-nav>
+      <a href="../#features">Features</a>
+      <a href="../#how">How it works</a>
+      <a href="../#pricing">Pricing</a>
+      <a href="../#privacy">Privacy</a>
+      <a href="../#faq">FAQ</a>
+      <a href="../#contact">Contact</a>
+      <a class="nav-lang" href="../../buy/" hreflang="uk" lang="uk">Українською</a>
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href="../../buy/" hreflang="uk" lang="uk" title="Українська версія">UA</a>
+      <button class="icon-btn" type="button" data-theme-toggle data-label-dark="Dark theme" data-label-light="Light theme" aria-label="Dark theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-sm" href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">Download</a>
+      <button class="icon-btn menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu" data-menu-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <section class="section page">
+    <div class="container buy">
+      <header class="section-head is-left">
+        <p class="eyebrow">One-time purchase · no subscription</p>
+        <h1>Buy Mova</h1>
+        <p>Choose how many Macs. Purchases are open to buyers in Ukraine. The key appears on the page right after payment and arrives by email.</p>
+      </header>
+      <form class="buy-form" data-buy-form novalidate>
+        <fieldset class="editions">
+          <legend>Edition</legend>
+          <label class="edition"><input type="radio" name="edition" value="personal" checked>
+            <span><b>Personal</b><em>299 UAH</em><small>up to 2 Macs at a time</small></span></label>
+          <label class="edition"><input type="radio" name="edition" value="family">
+            <span><b>Family</b><em>699 UAH</em><small>up to 5 Macs at a time</small></span></label>
+          <label class="edition"><input type="radio" name="edition" value="business">
+            <span><b>Business</b><em>2999 UAH</em><small>up to 20 Macs at a time</small></span></label>
+        </fieldset>
+        <div class="card form">
+          <label>Email<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+          <p class="fine">The key is sent here. The same address is needed to recover the key or get a refund.</p>
+          <details class="upgrade" data-upgrade>
+            <summary>I already have a key — move to a larger edition</summary>
+            <label>Your key<input name="upgradeKey" autocomplete="off" spellcheck="false" placeholder="MOVA-XXXX-XXXX-XXXX-XXXX"></label>
+            <p class="fine">You pay only the difference between editions; the key stays the same.</p>
+          </details>
+          <label class="check"><input type="checkbox" name="consent" required><span>I accept the <a href="../terms/">terms of sale</a> and the <a href="../privacy/">privacy policy</a></span></label>
+          <button class="btn btn-primary" type="submit" data-pay>Continue to payment</button>
+          <p class="form-status" role="status" data-status></p>
+          <noscript><p class="fine">Payment needs JavaScript. If you cannot enable it, write to support@yuri-val.dev.</p></noscript>
+          <ul class="buy-notes">
+            <li>Payment on monobank’s secure page: Visa, Mastercard, Apple Pay, Google Pay.</li>
+            <li>Refund within 14 days — just write to us.</li>
+            <li>Haven’t tried it yet? Mova works 14 days without a key: <a href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">download</a>.</li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="../"><img src="../../assets/app-icon.png" width="28" height="28" alt=""><span>Mova</span></a>
+      <p class="fine">Automatic keyboard layout switcher for macOS. English and Ukrainian.</p>
+    </div>
+    <nav aria-label="Page sections">
+      <a href="../#features">Features</a>
+      <a href="../#how">How it works</a>
+      <a href="../#settings">Settings</a>
+      <a href="../#privacy">Privacy</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <nav aria-label="Buyers">
+      <a href="../#pricing">Pricing</a>
+      <a href="../buy/">Buy a license</a>
+      <a href="../recover/">Recover a key</a>
+      <a href="../terms/">Terms of sale</a>
+      <a href="../privacy/">Privacy policy</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <nav aria-label="Links">
+      <a href="https://github.com/yuri-val/mova-releases/releases">All versions</a>
+      <a href="https://github.com/yuri-val/mova-releases/blob/main/CHANGELOG.md">Changelog</a>
+      <a href="../../buy/" hreflang="uk" lang="uk">Українською</a>
+    </nav>
+  </div>
+  <div class="container footer-base">
+    <p class="fine">© 2026 Yurii Valihurskyi, sole proprietor (FOP) · Taxpayer number 3455107130 · <a href="mailto:support@yuri-val.dev">support@yuri-val.dev</a> · Made in Ukraine</p>
+  </div>
+</footer>
+
+<script type="application/json" id="page-data">{"api": "https://mova-pay.yuri-valigursky.workers.dev", "lang": "en", "messages": {"sending": "Sending…", "redirecting": "Taking you to payment…", "sent_contact": "Thank you! We will reply to your email.", "sent_recover": "If there are keys for this address, the email is on its way. Check the spam folder too.", "copied": "Copied", "err_email": "Please check the email.", "err_message": "Please write a message.", "err_consent": "Please accept the terms of sale.", "err_key": "A key looks like MOVA-XXXX-XXXX-XXXX-XXXX.", "err_invalid_key": "No such key. Check that it was copied in full.", "err_revoked": "This key has been revoked.", "err_not_upgrade": "Your key is already {edition} or larger. Choose a larger edition.", "err_too_many": "Too many messages. Try again in an hour or write by email.", "err_payment": "Payment is temporarily unavailable. Try later or write to us.", "err_network": "Cannot reach the server. Check your connection and try again.", "editions": {"personal": "Personal", "family": "Family", "business": "Business"}}}</script>
+<script src="../../main.js?v=0.4.1" defer></script>
+<script src="../../pay.js?v=0.4.1" defer></script>
+</body>
+</html>

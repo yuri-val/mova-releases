@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you — Mova</title>
+<meta name="description" content="Your Mova key after payment.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://mova.yuri-val.dev/en/thanks/">
+<link rel="alternate" hreflang="en" href="https://mova.yuri-val.dev/en/thanks/">
+<link rel="alternate" hreflang="uk" href="https://mova.yuri-val.dev/thanks/">
+<link rel="alternate" hreflang="x-default" href="https://mova.yuri-val.dev/thanks/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mova">
+<meta property="og:title" content="Thank you — Mova">
+<meta property="og:description" content="Your Mova key after payment.">
+<meta property="og:url" content="https://mova.yuri-val.dev/en/thanks/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://mova.yuri-val.dev/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="preload" href="../../fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../styles.css?v=0.4.1">
+<script>
+  // Before first paint: remembered theme, and `js` so .reveal may hide content.
+  document.documentElement.classList.add('js');
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container header-row">
+    <a class="brand" href="../" aria-label="Mova">
+      <img src="../../assets/app-icon.png" width="32" height="32" alt="">
+      <span>Mova</span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Sections" data-nav>
+      <a href="../#features">Features</a>
+      <a href="../#how">How it works</a>
+      <a href="../#pricing">Pricing</a>
+      <a href="../#privacy">Privacy</a>
+      <a href="../#faq">FAQ</a>
+      <a href="../#contact">Contact</a>
+      <a class="nav-lang" href="../../thanks/" hreflang="uk" lang="uk">Українською</a>
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href="../../thanks/" hreflang="uk" lang="uk" title="Українська версія">UA</a>
+      <button class="icon-btn" type="button" data-theme-toggle data-label-dark="Dark theme" data-label-light="Light theme" aria-label="Dark theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-sm" href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">Download</a>
+      <button class="icon-btn menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu" data-menu-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <section class="section page">
+    <div class="container narrow">
+      <div class="card result" data-thanks aria-live="polite">
+        <div data-state="waiting">
+          <h1>Checking the payment…</h1>
+          <p>This usually takes a few seconds. Please keep this page open.</p>
+          <p class="spinner" aria-hidden="true"></p>
+        </div>
+        <div data-state="success" hidden>
+          <h1>Thank you! Here is your key</h1>
+          <p>We have also sent it by email.</p>
+          <p class="key-box"><code data-key></code><button class="btn btn-ghost btn-sm-ghost" type="button" data-copy>Copy</button></p>
+          <p class="cta-row"><a class="btn btn-primary" data-activate href="#">Activate in Mova</a><a class="btn btn-ghost" href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">Download for Mac</a></p>
+          <p class="fine">The button opens Mova and activates the key. If Mova is not installed yet, download it, launch it and press the button again, or paste the key into Settings → License.</p>
+        </div>
+        <div data-state="upgraded" hidden>
+          <h1>Done! Your license is larger now</h1>
+          <p>The key stays the same. Mova picks up the new edition within a day, or right away: Settings → License → Refresh.</p>
+        </div>
+        <div data-state="failed" hidden>
+          <h1>The payment did not go through</h1>
+          <p>No money was taken. Try again or use another card.</p>
+          <p class="cta-row"><a class="btn btn-primary" href="../buy/">Try again</a></p>
+        </div>
+        <div data-state="slow" hidden>
+          <h1>The payment is still processing</h1>
+          <p>The bank is taking longer than usual. The key will arrive by email as soon as the payment clears. No email within an hour? Write to support@yuri-val.dev.</p>
+        </div>
+        <div data-state="unknown" hidden>
+          <h1>Order not found</h1>
+          <p>Check the link or write to support@yuri-val.dev.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="../"><img src="../../assets/app-icon.png" width="28" height="28" alt=""><span>Mova</span></a>
+      <p class="fine">Automatic keyboard layout switcher for macOS. English and Ukrainian.</p>
+    </div>
+    <nav aria-label="Page sections">
+      <a href="../#features">Features</a>
+      <a href="../#how">How it works</a>
+      <a href="../#settings">Settings</a>
+      <a href="../#privacy">Privacy</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+    <nav aria-label="Buyers">
+      <a href="../#pricing">Pricing</a>
+      <a href="../buy/">Buy a license</a>
+      <a href="../recover/">Recover a key</a>
+      <a href="../terms/">Terms of sale</a>
+      <a href="../privacy/">Privacy policy</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <nav aria-label="Links">
+      <a href="https://github.com/yuri-val/mova-releases/releases">All versions</a>
+      <a href="https://github.com/yuri-val/mova-releases/blob/main/CHANGELOG.md">Changelog</a>
+      <a href="../../thanks/" hreflang="uk" lang="uk">Українською</a>
+    </nav>
+  </div>
+  <div class="container footer-base">
+    <p class="fine">© 2026 Yurii Valihurskyi, sole proprietor (FOP) · Taxpayer number 3455107130 · <a href="mailto:support@yuri-val.dev">support@yuri-val.dev</a> · Made in Ukraine</p>
+  </div>
+</footer>
+
+<script type="application/json" id="page-data">{"api": "https://mova-pay.yuri-valigursky.workers.dev", "lang": "en", "messages": {"sending": "Sending…", "redirecting": "Taking you to payment…", "sent_contact": "Thank you! We will reply to your email.", "sent_recover": "If there are keys for this address, the email is on its way. Check the spam folder too.", "copied": "Copied", "err_email": "Please check the email.", "err_message": "Please write a message.", "err_consent": "Please accept the terms of sale.", "err_key": "A key looks like MOVA-XXXX-XXXX-XXXX-XXXX.", "err_invalid_key": "No such key. Check that it was copied in full.", "err_revoked": "This key has been revoked.", "err_not_upgrade": "Your key is already {edition} or larger. Choose a larger edition.", "err_too_many": "Too many messages. Try again in an hour or write by email.", "err_payment": "Payment is temporarily unavailable. Try later or write to us.", "err_network": "Cannot reach the server. Check your connection and try again.", "editions": {"personal": "Personal", "family": "Family", "business": "Business"}}}</script>
+<script src="../../main.js?v=0.4.1" defer></script>
+<script src="../../pay.js?v=0.4.1" defer></script>
+</body>
+</html>

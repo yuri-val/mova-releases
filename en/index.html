@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mova — automatic keyboard layout switcher for macOS</title>
+<meta name="description" content="Typed a word in the wrong layout? Mova notices after the space, switches the layout and retypes the word. English and Ukrainian, for macOS.">
+
+<link rel="canonical" href="https://mova.yuri-val.dev/en/">
+<link rel="alternate" hreflang="en" href="https://mova.yuri-val.dev/en/">
+<link rel="alternate" hreflang="uk" href="https://mova.yuri-val.dev/">
+<link rel="alternate" hreflang="x-default" href="https://mova.yuri-val.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mova">
+<meta property="og:title" content="Mova — automatic keyboard layout switcher for macOS">
+<meta property="og:description" content="Typed a word in the wrong layout? Mova notices after the space, switches the layout and retypes the word. English and Ukrainian, for macOS.">
+<meta property="og:url" content="https://mova.yuri-val.dev/en/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://mova.yuri-val.dev/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preload" href="../fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css?v=0.4.1">
+<script>
+  // Before first paint: remembered theme, and `js` so .reveal may hide content.
+  document.documentElement.classList.add('js');
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Mova", "url": "https://mova.yuri-val.dev/", "inLanguage": "en"}, {"@type": "SoftwareApplication", "name": "Mova", "applicationCategory": "UtilitiesApplication", "operatingSystem": "macOS 15 or later", "softwareVersion": "0.4.1", "description": "Typed a word in the wrong layout? Mova notices after the space, switches the layout and retypes the word. English and Ukrainian, for macOS.", "downloadUrl": "https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg", "image": "https://mova.yuri-val.dev/assets/app-icon.png", "url": "https://mova.yuri-val.dev/en/", "offers": [{"@type": "Offer", "name": "Personal", "price": 299, "priceCurrency": "UAH", "url": "https://mova.yuri-val.dev/en/buy/?edition=personal"}, {"@type": "Offer", "name": "Family", "price": 699, "priceCurrency": "UAH", "url": "https://mova.yuri-val.dev/en/buy/?edition=family"}, {"@type": "Offer", "name": "Business", "price": 2999, "priceCurrency": "UAH", "url": "https://mova.yuri-val.dev/en/buy/?edition=business"}], "author": {"@type": "Person", "name": "Yurii Valihurskyi"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Mova doesn't fix anything. What should I check?", "acceptedAnswer": {"@type": "Answer", "text": "Open the Mova menu: the status line should say it is listening, with two permission ticks. Also check that auto-switching is on and the app is not in the exclusion list."}}, {"@type": "Question", "name": "Mova fixed a word I meant to keep.", "acceptedAnswer": {"@type": "Answer", "text": "Press ⌃⌥ right away: the word comes back and won't be fixed automatically again."}}, {"@type": "Question", "name": "Mova didn't fix a word.", "acceptedAnswer": {"@type": "Answer", "text": "Press ⌃⌥ to fix it by hand. If the word comes up often, add it to the always-switch list."}}, {"@type": "Question", "name": "Which layouts do I need?", "acceptedAnswer": {"@type": "Answer", "text": "English and Ukrainian layouts enabled in macOS, for example U.S. and Ukrainian-PC. Mova leaves other layouts alone."}}, {"@type": "Question", "name": "Does it work in terminals and code editors?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically: ordinary text there often looks like a typo. The hotkey works everywhere, and the exclusion list is yours to edit."}}, {"@type": "Question", "name": "How do I uninstall Mova?", "acceptedAnswer": {"@type": "Answer", "text": "Quit it from the menu and move Mova from Applications to the Trash. Settings live in ~/Library/Application Support/Mova/."}}, {"@type": "Question", "name": "How much does Mova cost?", "acceptedAnswer": {"@type": "Answer", "text": "14 days free, then a one-time purchase: Personal 299 UAH (up to 2 Macs), Family 699 UAH (up to 5), Business 2999 UAH (up to 20). No subscription, updates included."}}, {"@type": "Question", "name": "What happens after the trial?", "acceptedAnswer": {"@type": "Answer", "text": "Mova stops fixing the layout until you enter a key. Your settings and exceptions are kept."}}, {"@type": "Question", "name": "Does Mova need the internet?", "acceptedAnswer": {"@type": "Answer", "text": "Once a day Mova confirms the license. Without a connection a licensed Mova keeps working for up to 30 days. What you type is never sent."}}, {"@type": "Question", "name": "How do I move my license to a new Mac?", "acceptedAnswer": {"@type": "Answer", "text": "Activate the key on the new Mac. If there are no free seats, click Settings → License → Deactivate on the old one, or just wait: a Mac silent for 30 days frees its seat."}}, {"@type": "Question", "name": "How do I get a refund?", "acceptedAnswer": {"@type": "Answer", "text": "Within 14 days of payment write to support@yuri-val.dev from the address you bought with. The money goes back to your card and the key is revoked."}}]}]}</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container header-row">
+    <a class="brand" href="./" aria-label="Mova">
+      <img src="../assets/app-icon.png" width="32" height="32" alt="">
+      <span>Mova</span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Sections" data-nav>
+      <a href="./#features">Features</a>
+      <a href="./#how">How it works</a>
+      <a href="./#pricing">Pricing</a>
+      <a href="./#privacy">Privacy</a>
+      <a href="./#faq">FAQ</a>
+      <a href="./#contact">Contact</a>
+      <a class="nav-lang" href="../" hreflang="uk" lang="uk">Українською</a>
+    </nav>
+    <div class="header-actions">
+      <a class="lang-switch" href="../" hreflang="uk" lang="uk" title="Українська версія">UA</a>
+      <button class="icon-btn" type="button" data-theme-toggle data-label-dark="Dark theme" data-label-light="Light theme" aria-label="Dark theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-sm" href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">Download</a>
+      <button class="icon-btn menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu" data-menu-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">For macOS · English and Ukrainian</p>
+        <h1 id="hero-title">Just type. Mova fixes the layout.</h1>
+        <p class="lead">Typed «ghbdsn» when you meant «привіт»? After the space Mova spots it, switches the layout and retypes the word. No copying, no retyping, no breaking your flow.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">
+            <svg class="btn-icon" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            Download for Mac
+          </a>
+          <a class="btn btn-ghost" href="#how">How it works</a>
+        </div>
+        <p class="fine">macOS 15 Sequoia or later · 14 days free · version 0.4.1 · signed and notarized by Apple</p>
+      </div>
+      <figure class="hero-demo">
+        <div class="window">
+          <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img src="../assets/screens/demo.gif" width="656" height="220" alt="Typing in TextEdit: ghbdsn becomes «привіт», руддщ becomes hello, cdsn becomes «світ»" loading="eager">
+        </div>
+        <figcaption class="chips" aria-label="What the animation shows">
+          <span class="chip"><s>ghbdsn</s> → привіт</span>
+          <span class="chip"><s>руддщ</s> → hello</span>
+          <span class="chip"><s>cdsn</s> → світ</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2 id="features-title">Stop thinking about layouts</h2>
+        <p>Mova only looks at the word you just typed, and steps in only when it is sure.</p>
+      </header>
+      <div class="cards">
+        <article class="card reveal"><span class="card-icon" aria-hidden="true">⇄</span><h3>Fixes words automatically</h3><p>After a space, Enter, Tab or punctuation Mova checks the word. If it only makes sense in the other layout, Mova erases it and types it right, together with the short words before it: «yf cmjujlys» becomes «на сьогодні».</p></article>
+        <article class="card reveal"><span class="card-icon" aria-hidden="true">⌃⌥</span><h3>Fixes on demand</h3><p>Press <kbd>⌃</kbd> and <kbd>⌥</kbd> together: Mova fixes the word you are typing, or the last one. Any length.</p></article>
+        <article class="card reveal"><span class="card-icon" aria-hidden="true">↶</span><h3>Easy to undo</h3><p>The same hotkey within 3 seconds puts the word back and remembers it, so Mova leaves it alone from then on.</p></article>
+        <article class="card reveal"><span class="card-icon" aria-hidden="true">Aa</span><h3>Understands unknown words</h3><p>The macOS dictionary, rules for impossible letter combinations and letter-pair statistics for names and jargon. Doubtful words stay as they are.</p></article>
+        <article class="card reveal"><span class="card-icon" aria-hidden="true">⌘</span><h3>Stays out of the way</h3><p>Terminals, code editors, remote desktops and virtual machines are excluded by default. Password fields are never touched.</p></article>
+        <article class="card reveal"><span class="card-icon" aria-hidden="true">↻</span><h3>Updates itself</h3><p>Checks for a new version once a day and shows it in the menu. The update window opens only when you click.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="how" aria-labelledby="how-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2 id="how-title">How it works</h2>
+        <p>Three steps that take a fraction of a second after every word.</p>
+      </header>
+      <ol class="steps">
+        <li class="reveal"><span class="step-n">1</span><h3>You type</h3><p>Mova sees the keys you press and keeps only the current word in memory.</p></li>
+        <li class="reveal"><span class="step-n">2</span><h3>The word ends</h3><p>Mova reads the same keys in the English and the Ukrainian layout and checks both readings.</p></li>
+        <li class="reveal"><span class="step-n">3</span><h3>Wrong layout</h3><p>Mova erases the word, switches the layout and types the right reading. You carry on in the right language.</p></li>
+      </ol>
+      <div class="keys reveal" aria-label="Hotkey">
+        <kbd>⌃</kbd><span>+</span><kbd>⌥</kbd>
+        <p>The hotkey for manual fixes and undo. Pick another in settings: ⌥⇧, ⌃⇧, ⌘⌥ or ⌃⌘.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="settings" aria-labelledby="settings-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2 id="settings-title">Settings without the clutter</h2>
+        <p>A menu-bar icon, three settings tabs, and nothing you have to configure before you start. The app itself speaks Ukrainian.</p>
+      </header>
+      <div class="shots">
+        <figure class="shot reveal"><img src="../assets/screens/settings-general.png" width="586" height="718" loading="lazy" alt="General tab: auto-switching, hotkey, minimum word length, confidence, launch at login, updates"><figcaption>Hotkey, sensitivity, launch at login and updates</figcaption></figure>
+        <figure class="shot reveal"><img src="../assets/screens/settings-apps.png" width="586" height="718" loading="lazy" alt="Apps tab: excluded apps by bundle ID"><figcaption>Apps where Mova does not fix words automatically</figcaption></figure>
+        <figure class="shot reveal"><img src="../assets/screens/settings-exceptions.png" width="586" height="718" loading="lazy" alt="Exceptions tab: never-switch and always-switch lists"><figcaption>Words to leave alone or always fix</figcaption></figure>
+      </div>
+      <figure class="shot shot-menu reveal"><img src="../assets/screens/menu.png" width="502" height="340" loading="lazy" alt="Mova menu: license status, buy, enter key, auto-switching, fix last word, permission status, settings, updates"><figcaption>The menu-bar menu</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section band" id="privacy" aria-labelledby="privacy-title">
+    <div class="container privacy">
+      <header class="section-head is-left reveal">
+        <h2 id="privacy-title">What you type stays on your Mac</h2>
+        <p>Mova sees your keyboard, so privacy is not a detail.</p>
+      </header>
+      <ul class="ticks reveal">
+        <li>Nothing you type is sent anywhere or stored: only the current and the last word are kept in memory.</li>
+        <li>In password fields (secure input) Mova sees no keys at all.</li>
+        <li>The network is used only for updates and, once a day, for the license: the key and a hash of the Mac’s identifier that cannot be turned back into its serial number. No analytics, no accounts.</li>
+        <li>Builds are Developer ID signed and notarized by Apple; updates are EdDSA-signed.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="install" aria-labelledby="install-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2 id="install-title">Set up in a minute</h2>
+        <p>Mova needs two macOS permissions; without them it sees nothing and changes nothing.</p>
+      </header>
+      <ol class="install reveal">
+        <li>Download <a href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">Mova.dmg</a>, open it and drag Mova into Applications.</li>
+        <li>Launch Mova: an «AЯ» icon appears in the menu bar.</li>
+        <li>In System Settings → Privacy &amp; Security turn Mova on under <b>Input Monitoring</b> (to see keys) and <b>Accessibility</b> (to retype the word).</li>
+        <li>Type. No restart needed: Mova picks the permissions up within seconds.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2 id="pricing-title">Try it free, buy it once</h2>
+        <p>Mova works fully for 14 days without a key. After that, a one-time purchase, no subscription.</p>
+      </header>
+      <div class="plans">
+        <article class="plan reveal">
+          <h3>Personal</h3>
+          <p class="plan-price"><span>299</span> UAH</p>
+          <p class="plan-seats">up to 2 Macs at a time</p>
+          <p class="plan-who">Your work and home Mac.</p>
+          <a class="btn btn-ghost" href="buy/?edition=personal">Buy</a>
+        </article>
+        <article class="plan plan-featured reveal">
+          <p class="plan-badge">Best value</p>
+          <h3>Family</h3>
+          <p class="plan-price"><span>699</span> UAH</p>
+          <p class="plan-seats">up to 5 Macs at a time</p>
+          <p class="plan-who">For the whole family or a small team.</p>
+          <a class="btn btn-primary" href="buy/?edition=family">Buy</a>
+        </article>
+        <article class="plan reveal">
+          <h3>Business</h3>
+          <p class="plan-price"><span>2999</span> UAH</p>
+          <p class="plan-seats">up to 20 Macs at a time</p>
+          <p class="plan-who">For a company: one key per department.</p>
+          <a class="btn btn-ghost" href="buy/?edition=business">Buy</a>
+        </article>
+      </div>
+      <ul class="plan-terms reveal">
+        <li>Lifetime license with all updates</li>
+        <li>The key arrives right after payment — on the page and by email</li>
+        <li>Refund within 14 days, no questions asked</li>
+        <li>Moving to a larger edition costs only the difference</li>
+      </ul>
+      <p class="fine center reveal">Prices in Ukrainian hryvnias. Pay by card, Apple Pay or Google Pay through monobank. <a href="./terms/">Terms of sale</a> · <a href="./recover/">Lost your key?</a></p>
+    </div>
+  </section>
+
+  <section class="section band" id="faq" aria-labelledby="faq-title">
+    <div class="container narrow">
+      <header class="section-head reveal">
+        <h2 id="faq-title">Questions</h2>
+      </header>
+      <div class="faq"><details class="reveal"><summary>Mova doesn't fix anything. What should I check?</summary><p>Open the Mova menu: the status line should say it is listening, with two permission ticks. Also check that auto-switching is on and the app is not in the exclusion list.</p></details><details class="reveal"><summary>Mova fixed a word I meant to keep.</summary><p>Press <kbd>⌃</kbd><kbd>⌥</kbd> right away: the word comes back and won't be fixed automatically again.</p></details><details class="reveal"><summary>Mova didn't fix a word.</summary><p>Press <kbd>⌃</kbd><kbd>⌥</kbd> to fix it by hand. If the word comes up often, add it to the always-switch list.</p></details><details class="reveal"><summary>Which layouts do I need?</summary><p>English and Ukrainian layouts enabled in macOS, for example U.S. and Ukrainian-PC. Mova leaves other layouts alone.</p></details><details class="reveal"><summary>Does it work in terminals and code editors?</summary><p>Not automatically: ordinary text there often looks like a typo. The hotkey works everywhere, and the exclusion list is yours to edit.</p></details><details class="reveal"><summary>How do I uninstall Mova?</summary><p>Quit it from the menu and move Mova from Applications to the Trash. Settings live in ~/Library/Application Support/Mova/.</p></details><details class="reveal"><summary>How much does Mova cost?</summary><p>14 days free, then a one-time purchase: Personal 299 UAH (up to 2 Macs), Family 699 UAH (up to 5), Business 2999 UAH (up to 20). No subscription, updates included.</p></details><details class="reveal"><summary>What happens after the trial?</summary><p>Mova stops fixing the layout until you enter a key. Your settings and exceptions are kept.</p></details><details class="reveal"><summary>Does Mova need the internet?</summary><p>Once a day Mova confirms the license. Without a connection a licensed Mova keeps working for up to 30 days. What you type is never sent.</p></details><details class="reveal"><summary>How do I move my license to a new Mac?</summary><p>Activate the key on the new Mac. If there are no free seats, click Settings → License → Deactivate on the old one, or just wait: a Mac silent for 30 days frees its seat.</p></details><details class="reveal"><summary>How do I get a refund?</summary><p>Within 14 days of payment write to support@yuri-val.dev from the address you bought with. The money goes back to your card and the key is revoked.</p></details></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container contact">
+      <div class="reveal">
+        <header class="section-head is-left">
+          <h2 id="contact-title">About and contact</h2>
+          <p>Mova is made and sold by Yurii Valihurskyi, sole proprietor (FOP), Ukraine. It is an independent project: no investors, no ads, no data collection. Write with any question — about Mova, your license or a refund.</p>
+        </header>
+        <dl class="requisites">
+          <dt>Seller</dt><dd>Yurii Valihurskyi, sole proprietor (FOP)</dd>
+          <dt>Taxpayer number</dt><dd>3455107130</dd>
+          <dt>Address</dt><dd>65069, Ukraine, Odesa region, Odesa, Kapitana Kuznietsova St, bldg. 110, apt. 43</dd>
+          <dt>Email</dt><dd><a href="mailto:support@yuri-val.dev">support@yuri-val.dev</a></dd>
+        </dl>
+        <p class="fine"><a href="./terms/">Terms of sale</a> · <a href="./privacy/">Privacy policy</a></p>
+      </div>
+      <form class="form card reveal" data-contact-form novalidate>
+        <h3>Write to us</h3>
+        <label>Name<input name="name" autocomplete="name" maxlength="200"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+        <label>Message<textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+        <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+        <button class="btn btn-primary" type="submit">Send</button>
+        <p class="form-status" role="status" data-status></p>
+        <noscript><p class="fine">The form needs JavaScript. Or write to support@yuri-val.dev.</p></noscript>
+      </form>
+    </div>
+  </section>
+
+  <section class="section band cta-section" id="get" aria-labelledby="cta-title">
+    <div class="container cta-box reveal">
+      <img src="../assets/app-icon.png" width="96" height="96" alt="">
+      <h2 id="cta-title">Try Mova</h2>
+      <p>14 days free, then a one-time purchase from 299 UAH.</p>
+      <a class="btn btn-primary" href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg">Download for Mac</a>
+      <p class="fine">macOS 15 Sequoia or later · 14 days free · version 0.4.1 · signed and notarized by Apple</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="./"><img src="../assets/app-icon.png" width="28" height="28" alt=""><span>Mova</span></a>
+      <p class="fine">Automatic keyboard layout switcher for macOS. English and Ukrainian.</p>
+    </div>
+    <nav aria-label="Page sections">
+      <a href="./#features">Features</a>
+      <a href="./#how">How it works</a>
+      <a href="./#settings">Settings</a>
+      <a href="./#privacy">Privacy</a>
+      <a href="./#faq">FAQ</a>
+    </nav>
+    <nav aria-label="Buyers">
+      <a href="./#pricing">Pricing</a>
+      <a href="./buy/">Buy a license</a>
+      <a href="./recover/">Recover a key</a>
+      <a href="./terms/">Terms of sale</a>
+      <a href="./privacy/">Privacy policy</a>
+      <a href="./#contact">Contact</a>
+    </nav>
+    <nav aria-label="Links">
+      <a href="https://github.com/yuri-val/mova-releases/releases">All versions</a>
+      <a href="https://github.com/yuri-val/mova-releases/blob/main/CHANGELOG.md">Changelog</a>
+      <a href="../" hreflang="uk" lang="uk">Українською</a>
+    </nav>
+  </div>
+  <div class="container footer-base">
+    <p class="fine">© 2026 Yurii Valihurskyi, sole proprietor (FOP) · Taxpayer number 3455107130 · <a href="mailto:support@yuri-val.dev">support@yuri-val.dev</a> · Made in Ukraine</p>
+  </div>
+</footer>
+
+<script type="application/json" id="page-data">{"api": "https://mova-pay.yuri-valigursky.workers.dev", "lang": "en", "messages": {"sending": "Sending…", "redirecting": "Taking you to payment…", "sent_contact": "Thank you! We will reply to your email.", "sent_recover": "If there are keys for this address, the email is on its way. Check the spam folder too.", "copied": "Copied", "err_email": "Please check the email.", "err_message": "Please write a message.", "err_consent": "Please accept the terms of sale.", "err_key": "A key looks like MOVA-XXXX-XXXX-XXXX-XXXX.", "err_invalid_key": "No such key. Check that it was copied in full.", "err_revoked": "This key has been revoked.", "err_not_upgrade": "Your key is already {edition} or larger. Choose a larger edition.", "err_too_many": "Too many messages. Try again in an hour or write by email.", "err_payment": "Payment is temporarily unavailable. Try later or write to us.", "err_network": "Cannot reach the server. Check your connection and try again.", "editions": {"personal": "Personal", "family": "Family", "business": "Business"}}}</script>
+<script src="../main.js?v=0.4.1" defer></script>
+<script src="../pay.js?v=0.4.1" defer></script>
+</body>
+</html>

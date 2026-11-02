@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thanks/
+Disallow: /en/thanks/
+Sitemap: https://mova.yuri-val.dev/sitemap.xml
