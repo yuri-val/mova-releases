@@ -3,6 +3,16 @@
     <channel>
         <title>Mova</title>
         <item>
+            <title>0.4.1</title>
+            <pubDate>Mon, 02 Nov 2026 18:54:47 +0200</pubDate>
+            <link>https://github.com/yuri-val/mova-releases</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/yuri-val/mova-releases/releases/tag/v0.4.1</sparkle:fullReleaseNotesLink>
+            <sparkle:version>132</sparkle:version>
+            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/yuri-val/mova-releases/releases/download/v0.4.1/Mova-0.4.1.zip" length="2929716" type="application/octet-stream" sparkle:edSignature="7PNL4WmI5W3axI8IoRnsyLoXWIcis1onvx6bzGUGXJdz9Wci/MF+BFnihfYrR2yzUNGWpFshmbzTcbD6B+agBA=="/>
+        </item>
+        <item>
             <title>0.4.0</title>
             <pubDate>Mon, 02 Nov 2026 17:09:54 +0200</pubDate>
             <link>https://github.com/yuri-val/mova-releases</link>
@@ -21,16 +31,6 @@
             <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/yuri-val/mova-releases/releases/download/v0.3.0/Mova-0.3.0.zip" length="2740157" type="application/octet-stream" sparkle:edSignature="xYMikHwx/RPoqIp0cix5MeQa53sDqYFcdIQDNIZWy+Kg+ycauD4SgxHU0OUlOvKblYlLQclaDzcdjNU7QE7HAg=="/>
-        </item>
-        <item>
-            <title>0.2.0</title>
-            <pubDate>Sun, 01 Nov 2026 15:29:41 +0200</pubDate>
-            <link>https://github.com/yuri-val/mova-releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/yuri-val/mova-releases/releases/tag/v0.2.0</sparkle:fullReleaseNotesLink>
-            <sparkle:version>70</sparkle:version>
-            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/yuri-val/mova-releases/releases/download/v0.2.0/Mova-0.2.0.zip" length="2717849" type="application/octet-stream" sparkle:edSignature="1Bm0wRjXn/sXLPhPXEjFYRmvScRMNWe9WV+bnhPaRJtd+r/W3/jHK5G+2PISk4K+XJh0IUWm5ATV1iPH2x0/AQ=="/>
         </item>
     </channel>
 </rss>
