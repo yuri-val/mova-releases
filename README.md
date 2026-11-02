@@ -9,7 +9,7 @@
 
 <p align="center">
 <a href="https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg"><b>Завантажити Mova.dmg</b></a>
- · <a href="https://mova.yuri-val.dev/uk/">Сайт</a>
+ · <a href="https://mova.yuri-val.dev/">Сайт</a>
 </p>
 
 <p align="center"><img src="screenshots/demo.gif" width="656" alt="ghbdsn → привіт, руддщ → hello, cdsn → світ"></p>
@@ -51,10 +51,31 @@
 Потрібна macOS 15 Sequoia або новіша й увімкнені в системі англійська та
 українська розкладки, наприклад U.S. і Ukrainian-PC.
 
+## Ціна і ліцензія
+
+Mova працює повністю **14 днів безкоштовно**. Далі — одноразова покупка,
+без підписки, з усіма оновленнями:
+
+| Ліцензія | Ціна | Mac одночасно |
+|---|---|---|
+| Особиста | 299 грн | 2 |
+| Сімейна | 699 грн | 5 |
+| Корпоративна | 2999 грн | 20 |
+
+[Купити на сайті](https://mova.yuri-val.dev/buy/): оплата карткою, Apple
+Pay або Google Pay через monobank. Ключ з’являється на сторінці одразу
+після оплати й приходить листом; посилання з листа активує Mova одним
+кліком. Перехід на більшу ліцензію — доплата різниці, ключ той самий.
+Повернення коштів протягом 14 днів без пояснень. Умови —
+[публічна оферта](https://mova.yuri-val.dev/terms/).
+
 ## Меню
 
 <img src="screenshots/menu.png" width="456" alt="Меню Mova">
 
+- Угорі — стан ліцензії: скільки днів пробного періоду лишилося або яка
+  ліцензія активна, а також **Купити Mova…** і **Ввести ключ…**. В останні
+  3 дні пробного періоду на значку з’являється крапка.
 - **Автоперемикання** вмикає та вимикає автоматичні виправлення. Ручний
   ⌃⌥ працює завжди.
 - **Виправити останнє слово** робить те саме, що хоткей.
@@ -86,12 +107,21 @@
 - **Завжди перемикати**: слова, які Mova не впізнає, але ви хочете, щоб
   виправляла, наприклад імена.
 
+<img src="screenshots/settings-license.png" width="540" alt="Налаштування: ліцензія">
+
+**Ліцензія**: стан, поле для ключа, покупка й перехід на більшу ліцензію.
+Для активованої — **Оновити ліцензію** (одразу після апгрейду) і
+**Деактивувати на цьому Mac**, щоб звільнити місце для іншого.
+
 ## Приватність
 
 - Набраний текст нікуди не надсилається і не зберігається. Mova тримає в
   пам’яті лише поточне й останнє слово, щоб їх можна було виправити.
 - У полях паролів (secure input) Mova не бачить клавіш.
-- Мережа потрібна тільки для перевірки оновлень у цьому репозиторії.
+- Мережа потрібна для перевірки оновлень у цьому репозиторії і раз на
+  добу для ліцензії: Mova надсилає ключ і анонімний хеш Mac, з якого не
+  можна відновити серійний номер. Без інтернету ліцензована Mova працює
+  до 30 днів. Докладно — [політика конфіденційності](https://mova.yuri-val.dev/privacy/).
 - Налаштування лежать у `~/Library/Application Support/Mova/`.
 
 ## Часті питання
@@ -108,6 +138,20 @@ Input Monitoring та Accessibility. Також перевірте, що зас�
 таке слово трапляється часто, додайте його в **Завжди перемикати**.
 
 **Хоткей конфліктує з іншою програмою.** Оберіть інший у налаштуваннях.
+
+**Що буде після пробного періоду?** Mova перестане виправляти розкладку,
+доки ви не введете ключ. Налаштування й винятки збережуться.
+
+**Як перенести ліцензію на новий Mac?** Активуйте ключ на новому Mac.
+Якщо місць немає, на старому натисніть **Ліцензія → Деактивувати на цьому
+Mac** або зачекайте: Mac, що 30 днів не виходив на зв’язок, звільняє місце
+сам.
+
+**Загубили ключ?** [Відновіть його](https://mova.yuri-val.dev/recover/) за
+email покупки.
+
+**Як повернути кошти?** Протягом 14 днів після оплати напишіть на
+support@yuri-val.dev з адреси покупки.
 
 **Як видалити Mova?** Вийдіть через меню, перемістіть Mova з Applications
 у кошик і за бажання видаліть `~/Library/Application Support/Mova/`.
@@ -130,5 +174,7 @@ Press **⌃⌥** to fix the current or last word by hand, or to undo an
 automatic fix within 3 seconds. Terminals, code editors and remote
 desktops are excluded by default, and secure input fields are never
 touched. Keystrokes stay on your Mac.
-Requires macOS 15 or later.
-[Download Mova.dmg](https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg) · [Website](https://mova.yuri-val.dev/).
+Requires macOS 15 or later. Free for 14 days, then a one-time purchase:
+Personal 299 UAH (2 Macs), Family 699 UAH (5), Business 2999 UAH (20).
+[Buy](https://mova.yuri-val.dev/en/buy/) ·
+[Download Mova.dmg](https://github.com/yuri-val/mova-releases/releases/latest/download/Mova.dmg) · [Website](https://mova.yuri-val.dev/en/).
